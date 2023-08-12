@@ -1,0 +1,146 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7d78c2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+*h3{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;}
+
+/* Sections */
+section {
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+
+section h2 {
+    color: #0e0c0c;
+    margin-bottom: 20px;
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-item:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    z-index: 200;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Contact Form */
+#contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0e0c0c;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #0c0b0b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0a0909;
+}
